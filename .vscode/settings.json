@@ -1,7 +1,10 @@
 {
     "cSpell.words": [
         "DBTX",
+        "gomock",
+        "mapstructure",
         "migrateup",
+        "mockdb",
         "simpelebank",
         "sqlc",
         "sslmode",

@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Jul  8 08:34:13 2022
+# Make data base, printed on Tue Jul 12 08:37:40 2022
 
 # Variables
 
@@ -97,7 +97,7 @@ SNAP_REEXEC =
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 7359
+VSCODE_PID = 7093
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
@@ -105,7 +105,7 @@ XDG_SESSION_TYPE = x11
 # environment
 BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
 # environment
-SESSION_MANAGER = local/mehari:@/tmp/.ICE-unix/2331,unix/mehari:/tmp/.ICE-unix/2331
+SESSION_MANAGER = local/mehari:@/tmp/.ICE-unix/2364,unix/mehari:/tmp/.ICE-unix/2364
 # automatic
 *F = $(notdir $*)
 # environment
@@ -151,7 +151,7 @@ LC_TIME = am_ET
 # environment
 SNAP = /snap/code/100
 # environment
-INVOCATION_ID = 51f1793de9db4accaea45f70f1a8c21e
+INVOCATION_ID = f3cf4a76cb4f4304819b20d72d8221a1
 # environment
 SNAP_REVISION = 100
 # environment
@@ -185,7 +185,7 @@ SNAP_ARCH = amd64
 # makefile
 .DEFAULT_GOAL := postgres
 # environment
-SYSTEMD_EXEC_PID = 2357
+SYSTEMD_EXEC_PID = 2394
 # environment
 DISPLAY = :1
 # environment
@@ -201,11 +201,11 @@ SNAP_DATA = /var/snap/code/100
 # environment
 SNAP_CONTEXT = tFreuI4re5Di7bhYvEi89zUrellDO_l3C-HxWZ4DTn2AA-lDhRKv
 # environment
-MANAGERPID = 1930
+MANAGERPID = 1966
 # environment
 LC_MEASUREMENT = am_ET
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 7312
+GIO_LAUNCHED_DESKTOP_FILE_PID = 7021
 # environment
 _ = /snap/code/100/usr/share/code/code
 # environment
@@ -217,7 +217,7 @@ GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
 GDK_PIXBUF_MODULE_FILE = /home/mehari/snap/code/common/.cache/gdk-pixbuf-loaders.cache
 # environment
-JOURNAL_STREAM = 8:34837
+JOURNAL_STREAM = 8:35123
 # environment
 GOMODCACHE = /media/mehari/FE3C28D93C288EA9/Project/2f-go/pkg/mod
 # environment
@@ -273,14 +273,11 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 
 # Directories
 
-# . (device 2066, inode 1089936): 9 files, no impossibilities.
+# . (device 2066, inode 1089936): 14 files, no impossibilities.
 
-# 9 files, no impossibilities in 1 directories.
+# 14 files, no impossibilities in 1 directories.
 
 # Implicit Rules
- 
-make: *** No rule to make target 'all'.  Stop.
-
 
 # No implicit rules.
 
@@ -293,13 +290,24 @@ migratedown:
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 10):
 	migrate -path db/migration -database "postgresql://root:password@localhost:5432/simple_bank?sslmode=disable" -verbose down
+ 
+make: *** No rule to make target 'all'.  Stop.
+
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-07 10:31:08.4960528
+#  Last modified 2022-07-11 15:39:34.074687
 #  File has been updated.
 #  Successfully updated.
+
+mock:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 18):
+	mockgen -package mockdb --destination db/mock/store.go simpelebank/db/sqlc Store
 
 dropdb:
 #  Phony target (prerequisite of .PHONY).
@@ -308,6 +316,14 @@ dropdb:
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 6):
 	docker exec -t postgres dropdb simple_bank
+
+server:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 16):
+	go run main.go
 
 migrateup:
 #  Phony target (prerequisite of .PHONY).
@@ -362,25 +378,25 @@ createdb:
 #  recipe to execute (from 'Makefile', line 4):
 	docker exec -t postgres createdb --username=root --owner=root simple_bank
 
-.PHONY: postgres createdb dropdb migrateup migratedown sqlc test
+.PHONY: postgres createdb dropdb migrateup migratedown sqlc test server mock
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=12/1024=1%, Rehash=0, Collisions=0/29=0%
+# Load=14/1024=1%, Rehash=0, Collisions=1/33=3%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 22 / storage = 173 B / avg = 7 B
-# current buf: size = 8162 B / used = 173 B / count = 22 / avg = 7 B
+# strcache buffers: 1 (0) / strings = 29 / storage = 218 B / avg = 7 B
+# current buf: size = 8162 B / used = 218 B / count = 29 / avg = 7 B
 
-# strcache performance: lookups = 41 / hit rate = 46%
+# strcache performance: lookups = 52 / hit rate = 44%
 # hash-table stats:
-# Load=22/8192=0%, Rehash=0, Collisions=0/41=0%
-# Finished Make data base on Fri Jul  8 08:34:13 2022
+# Load=29/8192=0%, Rehash=0, Collisions=0/52=0%
+# Finished Make data base on Tue Jul 12 08:37:40 2022
 
  
