@@ -3,6 +3,7 @@
         "alphanum",
         "DBTX",
         "dgrijalva",
+        "goccy",
         "gofrs",
         "gomock",
         "mapstructure",
