@@ -1,4 +1,6 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
 # GNU Make 4.3
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
@@ -6,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Jul 12 08:37:40 2022
+# Make data base, printed on Wed Jul 13 08:43:31 2022
 
 # Variables
 
@@ -43,7 +45,7 @@ GOPATH = /media/mehari/FE3C28D93C288EA9/Project/2f-go
 # environment
 SNAP_INSTANCE_NAME = code
 # environment
-GDK_PIXBUF_MODULEDIR = /snap/code/100/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+GDK_PIXBUF_MODULEDIR = /snap/code/101/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -59,7 +61,7 @@ XDG_DATA_DIRS = /usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/
 # automatic
 %F = $(notdir $%)
 # environment
-VSCODE_CODE_CACHE_PATH = /home/mehari/.config/Code/CachedData/92d25e35d9bf1a6b16f7d0758f25d48ace11e5b9
+VSCODE_CODE_CACHE_PATH = /home/mehari/.config/Code/CachedData/b06ae3b2d2dbfe28bca3134cc6be65935cdfea6a
 # environment
 LANG = C
 # environment
@@ -97,7 +99,7 @@ SNAP_REEXEC =
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 7093
+VSCODE_PID = 9197
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
@@ -105,7 +107,7 @@ XDG_SESSION_TYPE = x11
 # environment
 BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
 # environment
-SESSION_MANAGER = local/mehari:@/tmp/.ICE-unix/2364,unix/mehari:/tmp/.ICE-unix/2364
+SESSION_MANAGER = local/mehari:@/tmp/.ICE-unix/2347,unix/mehari:/tmp/.ICE-unix/2347
 # automatic
 *F = $(notdir $*)
 # environment
@@ -149,11 +151,11 @@ SNAP_USER_COMMON = /home/mehari/snap/code/common
 # environment
 LC_TIME = am_ET
 # environment
-SNAP = /snap/code/100
+SNAP = /snap/code/101
 # environment
-INVOCATION_ID = f3cf4a76cb4f4304819b20d72d8221a1
+INVOCATION_ID = 1e75915cf0754129a66088ab128e7f3b
 # environment
-SNAP_REVISION = 100
+SNAP_REVISION = 101
 # environment
 SNAP_REAL_HOME = /home/mehari
 # environment
@@ -185,7 +187,7 @@ SNAP_ARCH = amd64
 # makefile
 .DEFAULT_GOAL := postgres
 # environment
-SYSTEMD_EXEC_PID = 2394
+SYSTEMD_EXEC_PID = 2370
 # environment
 DISPLAY = :1
 # environment
@@ -197,17 +199,17 @@ MAKE_VERSION := 4.3
 # environment
 DISABLE_WAYLAND = 1
 # environment
-SNAP_DATA = /var/snap/code/100
+SNAP_DATA = /var/snap/code/101
 # environment
 SNAP_CONTEXT = tFreuI4re5Di7bhYvEi89zUrellDO_l3C-HxWZ4DTn2AA-lDhRKv
 # environment
-MANAGERPID = 1966
+MANAGERPID = 1947
 # environment
 LC_MEASUREMENT = am_ET
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 7021
+GIO_LAUNCHED_DESKTOP_FILE_PID = 9125
 # environment
-_ = /snap/code/100/usr/share/code/code
+_ = /snap/code/101/usr/share/code/code
 # environment
 LC_PAPER = am_ET
 # environment
@@ -217,7 +219,7 @@ GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
 GDK_PIXBUF_MODULE_FILE = /home/mehari/snap/code/common/.cache/gdk-pixbuf-loaders.cache
 # environment
-JOURNAL_STREAM = 8:35123
+JOURNAL_STREAM = 8:34286
 # environment
 GOMODCACHE = /media/mehari/FE3C28D93C288EA9/Project/2f-go/pkg/mod
 # environment
@@ -231,11 +233,11 @@ QT_IM_MODULE = ibus
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-300b7415-1.69.0-main.sock
+VSCODE_IPC_HOOK = /run/user/1000/vscode-300b7415-1.69.1-main.sock
 # environment
 SNAP_NAME = code
 # environment
-GSETTINGS_SCHEMA_DIR = /snap/code/100/usr/share/glib-2.0/schemas
+GSETTINGS_SCHEMA_DIR = /snap/code/101/usr/share/glib-2.0/schemas
 # environment
 GOPROXY = https://proxy.golang.org,direct
 # default
@@ -243,7 +245,7 @@ GOPROXY = https://proxy.golang.org,direct
 # automatic
 <F = $(notdir $<)
 # environment
-SNAP_VERSION = 92d25e35
+SNAP_VERSION = b06ae3b2
 # default
 SUFFIXES := 
 # environment
@@ -255,7 +257,7 @@ SNAP_COMMON = /var/snap/code/common
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
 # environment
-SNAP_USER_DATA = /home/mehari/snap/code/100
+SNAP_USER_DATA = /home/mehari/snap/code/101
 # environment
 XDG_MENU_PREFIX = gnome-
 # environment
@@ -273,9 +275,9 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 
 # Directories
 
-# . (device 2066, inode 1089936): 14 files, no impossibilities.
+# . (device 2066, inode 1089936): 15 files, no impossibilities.
 
-# 14 files, no impossibilities in 1 directories.
+# 15 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -284,20 +286,18 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 # Files
 
 migratedown:
+ 
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 10):
+#  recipe to execute (from 'Makefile', line 17):
 	migrate -path db/migration -database "postgresql://root:password@localhost:5432/simple_bank?sslmode=disable" -verbose down
- 
-make: *** No rule to make target 'all'.  Stop.
-
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-11 15:39:34.074687
+#  Last modified 2022-07-12 10:38:37.5045624
 #  File has been updated.
 #  Successfully updated.
 
@@ -306,7 +306,7 @@ mock:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 18):
+#  recipe to execute (from 'Makefile', line 32):
 	mockgen -package mockdb --destination db/mock/store.go simpelebank/db/sqlc Store
 
 dropdb:
@@ -314,23 +314,32 @@ dropdb:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 6):
+#  recipe to execute (from 'Makefile', line 8):
 	docker exec -t postgres dropdb simple_bank
+
+migratedown1:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 20):
+	migrate -path db/migration -database "postgresql://root:password@localhost:5432/simple_bank?sslmode=disable" -verbose down 1
 
 server:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 16):
+#  recipe to execute (from 'Makefile', line 29):
 	go run main.go
+	
 
 migrateup:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 8):
+#  recipe to execute (from 'Makefile', line 11):
 	migrate -path db/migration -database "postgresql://root:password@localhost:5432/simple_bank?sslmode=disable" -verbose up
 
 # Not a target:
@@ -351,7 +360,7 @@ test:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 14):
+#  recipe to execute (from 'Makefile', line 26):
 	go test -v -cover ./...
 
 sqlc:
@@ -359,8 +368,16 @@ sqlc:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 12):
+#  recipe to execute (from 'Makefile', line 23):
 	sqlc generate
+
+migrateup1:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 14):
+	migrate -path db/migration -database "postgresql://root:password@localhost:5432/simple_bank?sslmode=disable" -verbose up 1
 
 postgres:
 #  Phony target (prerequisite of .PHONY).
@@ -375,28 +392,28 @@ createdb:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 4):
+#  recipe to execute (from 'Makefile', line 5):
 	docker exec -t postgres createdb --username=root --owner=root simple_bank
 
-.PHONY: postgres createdb dropdb migrateup migratedown sqlc test server mock
+.PHONY: postgres createdb dropdb migrateup migrateup1 migratedown migratedown1 sqlc test server mock
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=14/1024=1%, Rehash=0, Collisions=1/33=3%
+# Load=16/1024=2%, Rehash=0, Collisions=1/37=3%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 29 / storage = 218 B / avg = 7 B
-# current buf: size = 8162 B / used = 218 B / count = 29 / avg = 7 B
+# strcache buffers: 1 (0) / strings = 32 / storage = 248 B / avg = 7 B
+# current buf: size = 8162 B / used = 248 B / count = 32 / avg = 7 B
 
-# strcache performance: lookups = 52 / hit rate = 44%
+# strcache performance: lookups = 59 / hit rate = 45%
 # hash-table stats:
-# Load=29/8192=0%, Rehash=0, Collisions=0/52=0%
-# Finished Make data base on Tue Jul 12 08:37:40 2022
+# Load=32/8192=0%, Rehash=0, Collisions=0/59=0%
+# Finished Make data base on Wed Jul 13 08:43:31 2022
 
  

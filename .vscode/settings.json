@@ -1,13 +1,18 @@
 {
     "cSpell.words": [
+        "alphanum",
         "DBTX",
+        "dgrijalva",
+        "gofrs",
         "gomock",
         "mapstructure",
         "migrateup",
         "mockdb",
+        "Paseto",
         "simpelebank",
         "sqlc",
         "sslmode",
-        "stretchr"
+        "stretchr",
+        "verr"
     ]
 }
