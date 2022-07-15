@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Jul 15 09:30:39 2022
+# Make data base, printed on Fri Jul 15 09:42:44 2022
 
 # Variables
 
@@ -99,7 +99,7 @@ SNAP_REEXEC =
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 5134
+VSCODE_PID = 19847
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
@@ -207,7 +207,7 @@ MANAGERPID = 1984
 # environment
 LC_MEASUREMENT = am_ET
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 4942
+GIO_LAUNCHED_DESKTOP_FILE_PID = 19800
 # environment
 _ = /snap/code/101/usr/share/code/code
 # environment
@@ -280,13 +280,13 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 # 15 files, no impossibilities in 1 directories.
 
 # Implicit Rules
+ 
 
 # No implicit rules.
 
 # Files
 
 migratedown:
- 
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
@@ -414,6 +414,6 @@ createdb:
 # strcache performance: lookups = 59 / hit rate = 45%
 # hash-table stats:
 # Load=32/8192=0%, Rehash=0, Collisions=0/59=0%
-# Finished Make data base on Fri Jul 15 09:30:39 2022
+# Finished Make data base on Fri Jul 15 09:42:44 2022
 
  
