@@ -31,3 +31,5 @@ func main() {
 		log.Fatal("cannot start server:", err)
 	}
 }
+
+// main function
